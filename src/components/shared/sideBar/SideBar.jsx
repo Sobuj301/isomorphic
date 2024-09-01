@@ -26,15 +26,51 @@ const SideBar = () => {
             name: "financial",
             path: "/financial"
         },
+        {
+            name: "File Manager",
+            path: "/fileManager"
+        },
+        {
+            name: "Appoinment",
+            path: "/appoinment"
+        },
+        {
+            name: "Executive",
+            path: "/executive"
+        },
+        {
+            name: "Social Media",
+            path: "/socialMedia"
+        },
+        {
+            name: "Job Board",
+            path: "/jobBoard"
+        },
+        {
+            name: "financial",
+            path: "/financial"
+        },
+        {
+            name: "Social Media",
+            path: "/socialMedia"
+        },
+        {
+            name: "Job Board",
+            path: "/jobBoard"
+        },
+        {
+            name: "financial",
+            path: "/financial"
+        },
     ]
     return (
         <div>
-            <h2 className="text-xl font-serif mb-5">isomorphic</h2>
+           
             <ul>
-                <div className="space-y-4">
+                <div className="space-y-4 h-96 mt-10 overflow-auto  md:p-10">
                     {
                         links.map((link, index) => <li key={index}>
-                            <Link href={link.path}>{link.name}</Link>
+                            <button className="btn btn-ghost"><Link href={link.path}>{link.name}</Link></button>
                         </li>)
                     }
                 </div>
